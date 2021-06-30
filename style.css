@@ -1,0 +1,27 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  border: 2px solid gray;
+  display: grid;
+  height: 840px;
+  width: 840px;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  margin: auto;
+}
+
+.clear {
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.clear:hover {
+  box-shadow: 0px 0px 3px gray;
+}
